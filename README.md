@@ -60,9 +60,9 @@ class Pet:
 
 # Tasks
 
-- [ ] Create a Ninja class with the ninja attributes listed above.
+- [X] Create a Ninja class with the ninja attributes listed above.
 
-- [ ] Create a Pet class with the pet attributes listed above.
+- [X] Create a Pet class with the pet attributes listed above.
 
 - [ ] Implement walk(), feed(), bathe() on the ninja class.
 
