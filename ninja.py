@@ -1,6 +1,20 @@
 class Ninja:
-    #todo implement __init__( first_name , last_name , treats , pet_food , pet )
-    #todo implement the following methods:
-    #todo walk() - walks the ninja's pet invoking the pet play() method
-    #todo feed() - feeds the ninja's pet invoking the pet eat() method
-    #todo bathe() - cleans the ninja's pet invoking the pet noise() method
+    def __init__(self, first_name, last_name, pet, treats, pet_food):
+        self.first_name = first_name
+        self. last_name = last_name
+        self.pet = pet
+        self.treats = treats
+        self.pet_food = pet_food
+    def walk(self):
+        self.pet.play()
+        return self
+    def feed(self):
+        self.pet.eat()
+        return self
+    def bathe(self):
+        self.pet.noise()
+        return self
+
+
+
+brandon = Ninja("Brandon", "Schumacher", "Oscar", ["Friskies", "Kibbles", "Beggin' Strips"], "Purina")

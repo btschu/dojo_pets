@@ -23,8 +23,6 @@
 ```
 class Ninja:
     # implement __init__( first_name , last_name , treats , pet_food , pet )
-        	
-    
     # implement the following methods:
     # walk() - walks the ninja's pet invoking the pet play() method
     # feed() - feeds the ninja's pet invoking the pet eat() method
@@ -64,11 +62,11 @@ class Pet:
 
 - [X] Create a Pet class with the pet attributes listed above.
 
-- [ ] Implement walk(), feed(), bathe() on the ninja class.
+- [X] Implement walk(), feed(), bathe() on the ninja class.
 
-- [ ] Implement sleep(), eat(), play(), noise() methods on the pet class.
+- [X] Implement sleep(), eat(), play(), noise() methods on the pet class.
 
-- [ ] Make an instance of a Ninja and assign them an instance of a pet to the pet attribute.
+- [X] Make an instance of a Ninja and assign them an instance of a pet to the pet attribute.
 
 - [ ] Have the Ninja feed, walk , and bathe their pet.
 
