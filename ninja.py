@@ -1,4 +1,5 @@
 class Ninja:
+
     def __init__(self, first_name, last_name, pet, treats, pet_food):
         self.first_name = first_name
         self. last_name = last_name
@@ -9,12 +10,9 @@ class Ninja:
         self.pet.play()
         return self
     def feed(self):
-        self.pet.eat()
+        ninja = self
+        self.pet.eat(ninja)
         return self
     def bathe(self):
         self.pet.noise()
         return self
-
-
-
-brandon = Ninja("Brandon", "Schumacher", "Oscar", ["Friskies", "Kibbles", "Beggin' Strips"], "Purina")
