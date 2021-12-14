@@ -1,6 +1,4 @@
-from ninja import *
-from cat import *
-from monkey import *
+from ninja import Ninja
 
 class Pet:
 
@@ -14,10 +12,10 @@ class Pet:
     def sleep(self):
         self.energy += 25
         return self
-    def eat(self, ninja):
+    def eat(self):
         self.energy += 5
         self.health += 10
-        print(f"{self.name} ate {ninja.pet_food}! Energy = {self.energy}, Health = {self.health}")
+        print(f"{self.name} ate some food! Energy = {self.energy}, Health = {self.health}")
         return self
     def play(self):
         self.health += 5
@@ -28,11 +26,14 @@ class Pet:
         print(self.noises) # moo, woof, etc
         return self
 
-oscar = Pet("Oscar", "Cat", "Sleep", "Meow", 2)
+oscar = Pet("Oscar", "Cat", "Sleep", "Meow")
 gizmo = Pet ("Gizmo", "Dog", "Roll Over", "Woof")
-george = Monkey("George", "Monkey", "Very Curious", "Oo Oo Ah Ah", "Zoo")
+george = Pet("George", "Monkey", "Very Curious", "Oo Oo Ah Ah")
 dumbo = Pet("Dumbo", "Elephant", "Flying", "Trumpetting")
 
 brandon = Ninja("Brandon", "Schumacher", oscar, ["Friskies", "Kibbles", "Beggin' Strips"], "Purina")
-brandon.feed().bathe().walk()
 
+oscar.eat().sleep()
+brandon.feed().bathe().walk()
+gizmo.noise().play().sleep()
+dumbo.noise().play().eat()
