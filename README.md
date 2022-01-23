@@ -68,10 +68,10 @@ class Pet:
 
 - [X] Make an instance of a Ninja and assign them an instance of a pet to the pet attribute.
 
-- [ ] Have the Ninja feed, walk , and bathe their pet.
+- [X] Have the Ninja feed, walk , and bathe their pet.
 
-- [ ] NINJA BONUS: Use modules to separate out the classes into different files.
+- [X] NINJA BONUS: Use modules to separate out the classes into different files.
 
 - [ ] SENSEI BONUS: Use Inheritance to create sub classes of pets.
 
-- [ ] Compress or zip up assignment and upload it.
+- [X] Compress or zip up assignment and upload it.
